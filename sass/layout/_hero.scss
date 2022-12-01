@@ -1,4 +1,5 @@
 .hero {
+  @extend %section;
   padding: 200px 0px;
   margin-left: auto;
   margin-right: auto;

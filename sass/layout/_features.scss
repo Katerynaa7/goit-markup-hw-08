@@ -1,3 +1,7 @@
+.features__section {
+  @extend %section;
+}
+
 .features__list {
   list-style: none;
 }

@@ -1,3 +1,6 @@
+.clients {
+  @extend %section;
+}
 .clients__title {
   font-style: normal;
   font-size: 36px;

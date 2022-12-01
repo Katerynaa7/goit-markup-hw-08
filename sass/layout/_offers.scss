@@ -1,4 +1,5 @@
 .offers {
+  @extend %section;
   padding-top: 0px;
 }
 .offers .list {
