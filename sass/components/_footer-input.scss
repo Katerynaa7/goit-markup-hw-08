@@ -1,0 +1,60 @@
+.sign-form {
+  display: flex;
+}
+.sign-wrapper {
+  align-items: baseline;
+  align-content: center;
+  margin-left: 93px;
+}
+.sign-field {
+  margin-right: 12px;
+  padding: 0 20px;
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--additional-color);
+}
+.sign-fiend::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateX(16px);
+}
+.sign-field-mark {
+  position: absolute;
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+
+  min-height: 50px;
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.sign-item {
+  fill: #ffffff;
+}
