@@ -56,6 +56,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -701,10 +703,20 @@ img {
 }
 
 .features__list .features__descr {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 .features__list .features__descr:last-child {
   margin-right: 0px;
+}
+@media screen and (min-width: 768px) {
+  .features__list .features__descr:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__list .features__descr {
+    margin-right: 30px;
+  }
 }
 
 .features__wrapper {
@@ -732,10 +744,21 @@ img {
 }
 
 .features__list .feature__examples {
-  width: 270px;
+  width: 100%;
   color: var(--secondary-text-color);
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__list .feature__examples {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list .feature__examples {
+    margin-bottom: 0px;
+  }
 }
 
 .offers {

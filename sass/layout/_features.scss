@@ -11,10 +11,20 @@
   flex-wrap: wrap;
 }
 .features__list .features__descr {
-  margin-right: 30px;
+  margin-right: 0px;
 
   &:last-child {
     margin-right: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -36,8 +46,17 @@
 }
 
 .features__list .feature__examples {
-  width: 270px;
+  width: 100%;
   color: var(--secondary-text-color);
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
