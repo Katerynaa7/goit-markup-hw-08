@@ -647,7 +647,6 @@ img {
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-img.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
-  background-position: center;
 }
 
 .hero-title {
@@ -657,11 +656,17 @@ img {
   margin-bottom: 30px;
   color: var(--additional-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .hero-button {
@@ -709,13 +714,13 @@ img {
   margin-right: 0px;
 }
 @media screen and (min-width: 768px) {
-  .features__list .features__descr:nth-child(2n) {
-    margin-right: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
   .features__list .features__descr {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list .features__descr:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
@@ -752,6 +757,11 @@ img {
 }
 @media screen and (min-width: 768px) {
   .features__list .feature__examples {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list .feature__examples {
     width: 270px;
   }
 }
@@ -775,10 +785,16 @@ img {
 
 .offers__title {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .offers__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .offers__ex {
@@ -819,6 +835,11 @@ img {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 1px #000000;
           box-shadow: 0px 1px 1px #000000;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .team-wrapper {
+    margin-bottom: 30px;
+  }
 }
 
 .list .part-second-title {
@@ -899,7 +920,7 @@ img {
 }
 
 .participants-list .list {
-  margin-right: 30px;
+  margin: auto;
 }
 
 .participants-list .list:last-child {
@@ -910,6 +931,26 @@ img {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-list {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .team-picture {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
 .clients__title {
   font-style: normal;
   font-size: 36px;
