@@ -1,6 +1,10 @@
 .offers {
+  display: none;
   @extend %section;
   padding-top: 0px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .offers .list {
   display: flex;
