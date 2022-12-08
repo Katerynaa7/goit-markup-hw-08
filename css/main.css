@@ -308,8 +308,8 @@ img {
 .modal {
   position: relative;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--additional-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -319,6 +319,12 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .portfolio-try {
@@ -499,6 +505,18 @@ img {
   list-style: none;
 }
 
+.menu-toggle:hover {
+  fill: var(--accent-color);
+}
+
+.mobile-menu .link:hover {
+  color: var(--accent-color);
+}
+
+.mobile-menu .currentlink {
+  color: var(--accent-color);
+}
+
 @media (max-width: 767px) {
   .menu {
     display: none;
@@ -560,7 +578,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: var(--additional-color);
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -591,13 +609,38 @@ img {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: #fff;
+  margin-bottom: 32px;
+  color: var(--primary-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
 }
 
 .mobile-socials-link {
   text-decoration: none;
+}
+
+.mobile-contacts .mobile-contacts-link {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-contacts .mail-contacts-link {
+  display: block;
+  margin-bottom: 64px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 .mobile-socials {
@@ -605,6 +648,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+
+.mobile-socials-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .header {
@@ -837,7 +889,7 @@ img {
 }
 
 .hero-title {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -853,6 +905,7 @@ img {
   .hero-title {
     font-size: 44px;
     line-height: 1.3636363636;
+    width: 696px;
   }
 }
 
@@ -1291,9 +1344,6 @@ address {
 }
 
 .footer-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -1357,6 +1407,17 @@ address {
   fill: var(--additional-color);
 }
 
+@media screen and (max-width: 767px) {
+  .sign-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .portfolio-examples {
   display: -webkit-box;
   display: -ms-flexbox;

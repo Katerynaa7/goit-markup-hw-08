@@ -52,10 +52,11 @@ address {
 }
 
 .footer-contact {
-  display: flex;
+  // display: flex;
 
   align-items: baseline;
 }
+
 .socials-footer {
   margin-left: 70px;
 }
@@ -102,4 +103,11 @@ address {
 }
 .socials-icon {
   fill: var(--additional-color);
+}
+
+@media screen and (max-width: 767px) {
+  .sign-form {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -69,7 +69,7 @@
 }
 
 .hero-title {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -84,6 +84,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: calc(60 / 44);
+    width: 696px;
   }
 }
 .hero-button {
