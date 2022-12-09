@@ -7,7 +7,43 @@ address {
   font-style: normal;
 }
 .footer-logo {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    text-align: left;
+  }
+}
+
+.footer-contact-wrapper {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact-wrapper {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contact-wrapper {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .site-contact-list .link-location {
@@ -19,18 +55,21 @@ address {
   text-decoration: none;
 }
 
-.site-contact-list .link-general {
-  margin-bottom: 9px;
-
-  &:last-child {
-    margin-bottom: 0px;
-  }
-}
-
 .site-contact-list .link-location {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--additional-color);
+  margin-bottom: 12px;
+}
+.site-contact-list {
+  align-items: center;
+}
+.site-contact-list .link-general {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .site-contact-list .link-contact-list {
@@ -51,23 +90,18 @@ address {
   }
 }
 
-.footer-contact {
-  // display: flex;
-
-  align-items: baseline;
+@media screen and (max-width: 767.98px) {
+  .socials-footer {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .socials-footer {
+    margin-right: auto;
+  }
 }
 
-.socials-footer {
-  margin-left: 70px;
-}
-
-.socials-footer-list {
-  display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  gap: 10px;
-}
+// cnjg
 
 .footer-header {
   font-style: normal;
@@ -77,6 +111,20 @@ address {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-header {
+    text-align: left;
+  }
+}
+
+.socials-footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 0;
 }
 
 .socials-footer-list .socials-link {

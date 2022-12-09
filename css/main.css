@@ -128,21 +128,19 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.sign-wrapper {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-left: 93px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sign-field {
-  margin-right: 12px;
-  padding: 0 20px;
-  width: 358px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  width: 450px;
   height: 50px;
   background-color: #2f303a;
   border: none;
@@ -153,6 +151,13 @@ img {
   color: var(--additional-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
 .sign-fiend::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -161,7 +166,6 @@ img {
   -webkit-transform: translateX(16px);
           transform: translateX(16px);
 }
-
 .sign-fiend::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -169,7 +173,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transform: translateX(16px);
 }
-
 .sign-fiend:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -177,7 +180,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transform: translateX(16px);
 }
-
 .sign-fiend::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -185,7 +187,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transform: translateX(16px);
 }
-
 .sign-fiend::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -743,7 +744,6 @@ img {
   display: block;
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
-  margin-right: 93px;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -1297,9 +1297,49 @@ address {
 }
 
 .footer-logo {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  padding: 0;
 }
 
+.footer-contact {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    text-align: left;
+  }
+}
+.footer-contact-wrapper {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contact-wrapper {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact-wrapper {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
 .site-contact-list .link-location {
   list-style: none;
   text-decoration: none;
@@ -1310,17 +1350,24 @@ address {
   text-decoration: none;
 }
 
-.site-contact-list .link-general {
-  margin-bottom: 9px;
-}
-.site-contact-list .link-general:last-child {
-  margin-bottom: 0px;
-}
-
 .site-contact-list .link-location {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--additional-color);
+  margin-bottom: 12px;
+}
+
+.site-contact-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-contact-list .link-general {
+  margin-bottom: 12px;
+}
+.site-contact-list .link-general:last-child {
+  margin-bottom: 0px;
 }
 
 .site-contact-list .link-contact-list {
@@ -1343,26 +1390,16 @@ address {
   color: var(--accent-color);
 }
 
-.footer-contact {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (max-width: 767.98px) {
+  .socials-footer {
+    margin-bottom: 60px;
+  }
 }
-
-.socials-footer {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .socials-footer {
+    margin-right: auto;
+  }
 }
-
-.socials-footer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  gap: 10px;
-}
-
 .footer-header {
   font-style: normal;
   font-size: 14px;
@@ -1371,6 +1408,25 @@ address {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-header {
+    text-align: left;
+  }
+}
+.socials-footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  padding-left: 0;
 }
 
 .socials-footer-list .socials-link {
