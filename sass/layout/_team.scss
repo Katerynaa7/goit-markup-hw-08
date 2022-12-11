@@ -1,4 +1,4 @@
-.team {
+.team-section {
   @extend %section;
 }
 
@@ -8,10 +8,6 @@
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 1px #000000;
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    margin-bottom: 30px;
-  }
 }
 
 .list .part-second-title {
@@ -72,13 +68,9 @@
 .participants-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
-.participants-list .list {
-  margin: auto;
-}
-.participants-list .list:last-child {
-  margin-right: 0px;
-}
+
 .part-list-element {
   margin-bottom: 16px;
 }
@@ -98,11 +90,5 @@
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .team-picture {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-list:nth-child(odd) {
-    margin-right: 30px;
   }
 }

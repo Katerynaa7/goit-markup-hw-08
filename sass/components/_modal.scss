@@ -1,7 +1,7 @@
 .modal {
   position: relative;
   padding: 40px;
-  width: 450px;
+  width: 95%;
   height: 609px;
 
   background-color: var(--additional-color);
@@ -12,6 +12,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -127,8 +131,18 @@
   gap: 9px;
   margin-bottom: 30px;
 }
+
 .modal-form-agreement-desc {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal-form-agreement-link {
   color: var(--accent-color);
